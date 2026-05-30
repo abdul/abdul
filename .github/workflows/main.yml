@@ -1,53 +1,86 @@
 name: Metrics
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 */12 * * *"
+workflow_dispatch:
+schedule:
+- cron: "0 */12 * * *"
 
 permissions:
-  contents: write
+contents: write
 
 jobs:
-  github-metrics:
-    runs-on: ubuntu-latest
+github-metrics:
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Generate metrics
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
+```
+steps:
+  - name: Main Profile Card
+    uses: lowlighter/metrics@latest
+    with:
+      token: ${{ secrets.METRICS_TOKEN }}
+      user: abdul
+      filename: metrics.svg
 
-          user: abddul
+      template: classic
+      base: header, activity, community, repositories, metadata
 
-          filename: github-metrics.svg
+      config_timezone: Asia/Kolkata
 
-          template: classic
-          base: header, activity, community, repositories, metadata
+      committer_branch: main
+      committer_message: "Update metrics"
 
-          config_timezone: Asia/Kolkata
+  - name: Languages
+    uses: lowlighter/metrics@latest
+    with:
+      token: ${{ secrets.METRICS_TOKEN }}
+      user: abdul
+      filename: languages.svg
 
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_limit: 10
-          plugin_languages_indepth: yes
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 30
+      base: ""
+      plugin_languages: yes
+      plugin_languages_sections: most-used
+      plugin_languages_indepth: yes
+      plugin_languages_limit: 12
 
-          plugin_isocalendar: yes
+  - name: Contribution Calendar
+    uses: lowlighter/metrics@latest
+    with:
+      token: ${{ secrets.METRICS_TOKEN }}
+      user: abdul
+      filename: calendar.svg
 
-          plugin_followup: yes
-          plugin_followup_sections: user
+      base: ""
+      plugin_isocalendar: yes
 
-          plugin_reactions: yes
+  - name: Achievements
+    uses: lowlighter/metrics@latest
+    with:
+      token: ${{ secrets.METRICS_TOKEN }}
+      user: abdul
+      filename: achievements.svg
 
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
+      base: ""
+      plugin_achievements: yes
+      plugin_achievements_threshold: C
 
-          plugin_stars: yes
+  - name: Stars
+    uses: lowlighter/metrics@latest
+    with:
+      token: ${{ secrets.METRICS_TOKEN }}
+      user: abdul
+      filename: stars.svg
 
-          plugin_topics: yes
-          plugin_topics_limit: 20
+      base: repositories
+      plugin_stars: yes
 
-          committer_branch: main
-          committer_message: "Update metrics"
+  - name: Topics
+    uses: lowlighter/metrics@latest
+    with:
+      token: ${{ secrets.METRICS_TOKEN }}
+      user: abdul
+      filename: topics.svg
+
+      base: ""
+      plugin_topics: yes
+      plugin_topics_limit: 30
+```
