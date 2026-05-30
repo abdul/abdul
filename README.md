@@ -2,11 +2,27 @@
 
 # Abdul Qabiz
 
-### CTO • System Architect • Agentic AI • Distributed Systems
-
-Building internet systems for 20+ years.
+<a href="https://github.com/abdul">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=CTO+%E2%80%A2+System+Architect;Agentic+AI+Engineer;Distributed+Systems;Building+internet+systems+for+20%2B+years" alt="Roles" />
+</a>
 
 From Macromedia Flex and Yahoo! to distributed platforms, video infrastructure, search systems, and Agentic AI.
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/RAG-8957E5?style=for-the-badge&logo=databricks&logoColor=white" alt="RAG" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
+</p>
+
+<p>
+  <a href="https://linkedin.com/in/abdulqabiz"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/abdulqabiz"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://www.abdulqabiz.com"><img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
+  <a href="https://github.com/abdul"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+</p>
 
 </div>
 
@@ -47,29 +63,14 @@ Today I serve as CTO at FreePixel, where I lead platform architecture, infrastru
 
 ## Technology Stack
 
-### AI
-
-Python • Agentic AI • LLM Pipelines • RAG • LLaMA • Multimodal Models • AI Agents
-
-### Infrastructure
-
-Linux • Docker • AWS • GCP • Cloudflare • Nginx • Kubernetes
-
-### Data
-
-Elasticsearch • OpenSearch • Vector Search • Firestore • PostgreSQL
-
-### Backend
-
-Python • FastAPI • Node.js • Celery • REST APIs
-
-### Frontend
-
-React • Next.js • Angular • JavaScript • TypeScript
-
-### Observability
-
-Prometheus • Grafana • OpenTelemetry
+| Category | Technologies |
+| --- | --- |
+| **AI** | Python · Agentic AI · LLM Pipelines · RAG · LLaMA · Multimodal Models · AI Agents |
+| **Infrastructure** | Linux · Docker · AWS · GCP · Cloudflare · Nginx · Kubernetes |
+| **Data** | Elasticsearch · OpenSearch · Vector Search · Firestore · PostgreSQL |
+| **Backend** | Python · FastAPI · Node.js · Celery · REST APIs |
+| **Frontend** | React · Next.js · Angular · JavaScript · TypeScript |
+| **Observability** | Prometheus · Grafana · OpenTelemetry |
 
 ---
 
@@ -79,47 +80,45 @@ Prometheus • Grafana • OpenTelemetry
 
 ---
 
-## Languages
+## Metrics
 
-<img src="./languages.svg" width="100%" />
-
----
-
-## Achievements
-
-<img src="./achievements.svg" width="100%" />
-
----
-
-## Popular Repositories & Stars
-
-<img src="./stars.svg" width="100%" />
-
----
-
-## Topics & Interests
-
-<img src="./topics.svg" width="100%" />
+<table>
+  <tr>
+    <td width="50%"><img src="./languages.svg" width="100%" /></td>
+    <td width="50%"><img src="./achievements.svg" width="100%" /></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="./stars.svg" width="100%" /></td>
+    <td width="50%"><img src="./topics.svg" width="100%" /></td>
+  </tr>
+</table>
 
 ---
 
 ## Companies & Projects
 
-### FreePixel
-
-AI powered creative platform focused on search, automation, metadata intelligence, vector search, and generative AI.
-
-### Allies Interactive
-
-Technology partnership and product development for founders and growing businesses for more than seventeen years.
-
-### Diziana
-
-Zendesk themes, applications, and customisation services used by organisations including Cloudflare, Figma, Gates Foundation, Cornell University, Tripadvisor, Nykaa, HelloFresh, and many others.
-
-### IndieReign
-
-Video on Demand platform serving independent filmmakers worldwide with DRM protected streaming infrastructure.
+<table>
+  <tr>
+    <td width="50%">
+      <h3>FreePixel</h3>
+      AI powered creative platform — search, automation, metadata intelligence, vector search, and generative AI.
+    </td>
+    <td width="50%">
+      <h3>Allies Interactive</h3>
+      Technology partnership and product development for founders and growing businesses for 17+ years.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>Diziana</h3>
+      Zendesk themes, apps, and customisation used by Cloudflare, Figma, Gates Foundation, Cornell, Tripadvisor, Nykaa, HelloFresh, and more.
+    </td>
+    <td width="50%">
+      <h3>IndieReign</h3>
+      Video on Demand platform for independent filmmakers worldwide, with DRM protected streaming infrastructure.
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -152,4 +151,8 @@ Flash • Flex • ActionScript • PHP • Python • Node.js • Elasticsearch
 
 ---
 
+<div align="center">
+
 > Build useful systems. Keep complexity under control. Continue learning.
+
+</div>
