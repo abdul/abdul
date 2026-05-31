@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Main Profile Card
         uses: lowlighter/metrics@latest
         with:
@@ -22,20 +25,6 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Kolkata
-
-      - name: Languages
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: abdul
-          filename: languages.svg
-          base: ""
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_indepth: yes
-          plugin_languages_analysis_timeout: 20
-          plugin_languages_limit: 12
-          repositories_affiliations: owner
 
       - name: Calendar
         uses: lowlighter/metrics@latest
@@ -64,3 +53,21 @@ jobs:
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 30
+
+      # Custom generator (runs last): counts ALL owned repos (public + private)
+      # via the GraphQL languages connection. lowlighter/metrics cannot see
+      # private code — its in-depth analyzer reads the public events feed only.
+      # Earlier steps commit their SVGs via the API, so rebase before pushing.
+      - name: Languages (public + private)
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          python3 scripts/generate_languages_svg.py
+          if [ -n "$(git status --porcelain languages.svg)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add languages.svg
+            git commit -m "Update languages.svg - [Skip GitHub Action]"
+            git pull --rebase --autostash origin main
+            git push
+          fi
