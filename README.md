@@ -85,13 +85,11 @@ Today I serve as CTO at FreePixel, where I lead platform architecture, infrastru
 <table>
   <tr>
     <td width="50%"><img src="./languages.svg" width="100%" /></td>
-    <td width="50%"><img src="./achievements.svg" width="100%" /></td>
-  </tr>
-  <tr>
     <td width="50%"><img src="./stars.svg" width="100%" /></td>
-    <td width="50%"><img src="./topics.svg" width="100%" /></td>
   </tr>
 </table>
+
+<img src="./topics.svg" width="100%" />
 
 ---
 
